@@ -6,6 +6,7 @@ import Signup from './Signup';
 import Onboarding from './Onboarding';
 import Login from './Login';
 import Home from './Home';
+import PrivateRoute from './PrivateRoute';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Router>
           <AuthProvider>
             <Switch>
-              <Route exact path="/" component={Onboarding} />
+              <PrivateRoute exact path="/" component={Onboarding} />
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/home" component={Home} />

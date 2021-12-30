@@ -5,3 +5,51 @@
 .scont {
   max-width: 400px;
 }
+
+.onbordtextbg1 {
+  border-radius: 50px !important;
+  background-color: #FFFFFF;
+}
+
+.bg1 {
+  border-radius: 50px !important;
+  background-color: #F3F3F3!important;
+}
+
+.formborder1 {
+  border-color: #F0F0F0!important;
+}
+
+.onbordtextbg2 {
+  border-radius: 50px !important;
+  background-color: #2F2F43;
+  color: white;
+}
+
+.bg2 {
+  border-radius: 50px !important;
+  background-color: #181828!important;
+  color: #FEFEFE;
+}
+
+.onbordbg2 {
+  border-radius: 50px !important;
+  background-color: #232232!important;
+}
+
+.formborder2 {
+  border-color: #3B3B4E!important;
+  background-color: #2F2F43!important;
+}
+
+
+.formborder2::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FEFEFE!important;
+  opacity: 1; /* Firefox */
+}
+
+.formborder1::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #161617!important;
+  opacity: 1; /* Firefox */
+}
+

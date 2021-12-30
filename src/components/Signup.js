@@ -36,19 +36,19 @@ function Signup() {
 
   return (
     <>
-      <Card className="border-0">
+      <Card className="border-0 bg1">
         <Card.Body className="m-5">
           <h2 className="text-center mb-4">Sign Up</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Control type="email" ref={emailRef} required placeholder="Email" className="text-center mb-4" />
+              <Form.Control type="email" ref={emailRef} required placeholder="Email" className="mb-4 formborder1" />
             </Form.Group>
             <Form.Group id="password" className="mb-4">
-              <Form.Control type="password" ref={passwordRef} required placeholder="Password" className="text-center mb-3" />
+              <Form.Control type="password" ref={passwordRef} required placeholder="Password" className="mb-3 formborder1" />
             </Form.Group>
             <Form.Group id="password-confirm" className="mb-4">
-              <Form.Control type="password" ref={passwordConfirmRef} required placeholder="Password Confirmation" className="text-center mb-3" />
+              <Form.Control type="password" ref={passwordConfirmRef} required placeholder="Password Confirmation" className="mb-3 formborder1" />
             </Form.Group>
             <Button disabled={loading} className="mt-4 rounded-pill" type="submit">Sign Up</Button>
           </Form>
