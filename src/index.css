@@ -8,48 +8,46 @@
 
 .onbordtextbg1 {
   border-radius: 50px !important;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .bg1 {
   border-radius: 50px !important;
-  background-color: #F3F3F3!important;
+  background-color: #f3f3f3 !important;
 }
 
 .formborder1 {
-  border-color: #F0F0F0!important;
+  border-color: #f0f0f0 !important;
 }
 
 .onbordtextbg2 {
   border-radius: 50px !important;
-  background-color: #2F2F43;
+  background-color: #2f2f43;
   color: white;
 }
 
 .bg2 {
   border-radius: 50px !important;
-  background-color: #181828!important;
-  color: #FEFEFE;
+  background-color: #181828 !important;
+  color: #fefefe;
 }
 
 .onbordbg2 {
   border-radius: 50px !important;
-  background-color: #232232!important;
+  background-color: #232232 !important;
 }
 
 .formborder2 {
-  border-color: #3B3B4E!important;
-  background-color: #2F2F43!important;
+  border-color: #3b3b4e !important;
+  background-color: #2f2f43 !important;
 }
 
-
 .formborder2::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #FEFEFE!important;
+  color: #fefefe !important;
   opacity: 1; /* Firefox */
 }
 
 .formborder1::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #161617!important;
+  color: #161617 !important;
   opacity: 1; /* Firefox */
 }
-
