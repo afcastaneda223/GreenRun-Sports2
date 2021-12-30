@@ -51,3 +51,7 @@
   color: #161617 !important;
   opacity: 1; /* Firefox */
 }
+
+.dropdown-toggle:after {
+  display: none !important; 
+}
