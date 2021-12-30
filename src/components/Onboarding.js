@@ -9,8 +9,8 @@ function Onboarding() {
       <Card.Body className="onbordtextbg2">
         <Card.Title className="mt-3">Discover Your Best</Card.Title>
         <Card.Title>Sport With Us</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of
+        <Card.Text className="mt-4">
+          Like or Dislike your favorite sports.
         </Card.Text>
         <Link to="/login" className="btn btn-primary mt-4 rounded-pill">
           <p className="m-1">Login</p>

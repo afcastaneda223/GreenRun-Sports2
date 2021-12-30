@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Container, Card } from 'react-bootstrap';
+import { Container, Card, Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { AuthProvider } from '../context/AuthContext';
 import Signup from './Signup';
@@ -23,8 +23,8 @@ function App() {
                 <Route exact path="/" component={Onboarding} />
                 <Route path="/signup" component={Signup} />
                 <Route path="/login" component={Login} />
-                <Route path="/historial" component={Historial} />
-                <Route path="/notes" component={Notes} />
+                <PrivateRoute path="/historial" component={Historial} />
+                <PrivateRoute path="/notes" component={Notes} />
                 <PrivateRoute path="/home" component={Home} />
                 <PrivateRoute path="/update-profile" component={UpdateProfile} />
                 <Route path="/forgot-password" component={ForgotPassord} />
