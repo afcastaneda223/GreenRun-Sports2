@@ -3,21 +3,11 @@ import React, { useState } from 'react';
 import { Card, Button, Alert, NavDropdown, ButtonGroup, Dropdown, NavItem } from 'react-bootstrap';
 import { useHistory, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import axios from "axios";
 
-function Home() {
+function Historial() {
   const [error, setError] = useState('');
   const { currentUser, logout } = useAuth();
   const history = useHistory();
-  
-  let reqOptions = {
-    url: "https://www.thesportsdb.com/api/v1/json/2/all_sports.php",
-    method: "GET",
-  }
-  
-  axios.request(reqOptions).then(function (response) {
-    console.log(response.data);
-  })
 
   async function handleLogout() {
     setError('')
@@ -32,11 +22,9 @@ function Home() {
 
   return (
     <>
-        <Card.Img variant="top" src="https://www.thesportsdb.com/images/media/player/cutout/9s8opt1628844333.png" />
         <Card.Body className="d-flex align-items-center justify-content-center my-5">
           {error && <Alert variant="danger">{error}</Alert>}
-          <Button className="rounded-pill" type="submit">X</Button>
-          <Button className="rounded-pill" type="submit">like</Button>
+          Historial
         </Card.Body>
         <Card.Body className="onbordtextbg1 m-3 d-flex justify-content-between">
           <NavItem>
@@ -76,4 +64,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Historial;

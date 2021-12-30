@@ -31,26 +31,24 @@ function Login() {
 
   return (
     <>
-      <Card className="border-0 bg2">
-        <Card.Body className="m-5">
-          <h2 className="text-center">Welcome</h2>
-          <p className="text-center mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Control type="email" ref={emailRef} required placeholder="Email" className="mb-4 formborder2 text-white" />
-            </Form.Group>
-            <Form.Group id="password" className="mb-4">
-              <Form.Control type="password" ref={passwordRef} required placeholder="Password" className=" mb-3 formborder2 text-white" />
-            </Form.Group>
-            <Button disabled={loading} className="mt-4 rounded-pill" type="submit">Login</Button>
-            <div className="w-100 text-center mt-3">
-              <Link to="/forgot-password">Forgot your password?</Link>
-            </div>
-          </Form>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-3">
+      <Card.Body className="m-5">
+        <h2 className="text-center">Welcome</h2>
+        <p className="text-center mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        {error && <Alert variant="danger">{error}</Alert>}
+        <Form onSubmit={handleSubmit}>
+          <Form.Group id="email">
+            <Form.Control type="email" ref={emailRef} required placeholder="Email" className="mb-4 formborder2 text-white" />
+          </Form.Group>
+          <Form.Group id="password" className="mb-4">
+            <Form.Control type="password" ref={passwordRef} required placeholder="Password" className=" mb-3 formborder2 text-white" />
+          </Form.Group>
+          <Button disabled={loading} className="mt-4 rounded-pill" type="submit">Login</Button>
+          <div className="w-100 text-center mt-3">
+            <Link to="/forgot-password">Forgot your password?</Link>
+          </div>
+        </Form>
+      </Card.Body>
+      <div className="w-100 text-center my-3">
         Need a new account?
         {' '}
         <Link to="/signup">Sign Up</Link>

@@ -45,31 +45,29 @@ function UpdateProfile() {
 
   return (
     <>
-      <Card className="border-0 bg1">
-        <Card.Body className="m-5">
-          <h2 className="text-center mb-4">Update Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Control type="email" ref={emailRef} required placeholder="Email" className="mb-4 formborder1" defaultValue={currentUser.email} />
-            </Form.Group>
-            <Form.Group id="password" className="mb-3">
-              <Form.Control type="new-password" ref={newPasswordRef} placeholder="New Password" className="formborder1" />
-              <Form.Text className="text-muted">
-                Leave blank to keep the same
-              </Form.Text>
-            </Form.Group>
-            <Form.Group id="new-password-confirm" className="mb-3">
-              <Form.Control type="password" ref={newPasswordConfirmRef} placeholder="New Password Confirmation" className="formborder1" />
-              <Form.Text className="text-muted">
-                Leave blank to keep the same
-              </Form.Text>
-            </Form.Group>
-            <Button disabled={loading} className="mt-4 rounded-pill btn btn-danger" type="submit">Update Profile</Button>
-          </Form>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-3">
+      <Card.Body className="m-5">
+        <h2 className="text-center mb-4">Update Profile</h2>
+        {error && <Alert variant="danger">{error}</Alert>}
+        <Form onSubmit={handleSubmit}>
+          <Form.Group id="email">
+            <Form.Control type="email" ref={emailRef} required placeholder="Email" className="mb-4 formborder1" defaultValue={currentUser.email} />
+          </Form.Group>
+          <Form.Group id="password" className="mb-3">
+            <Form.Control type="new-password" ref={newPasswordRef} placeholder="New Password" className="formborder1" />
+            <Form.Text className="text-muted">
+              Leave blank to keep the same
+            </Form.Text>
+          </Form.Group>
+          <Form.Group id="new-password-confirm" className="mb-3">
+            <Form.Control type="password" ref={newPasswordConfirmRef} placeholder="New Password Confirmation" className="formborder1" />
+            <Form.Text className="text-muted">
+              Leave blank to keep the same
+            </Form.Text>
+          </Form.Group>
+          <Button disabled={loading} className="mt-4 rounded-pill btn btn-danger" type="submit">Update Profile</Button>
+        </Form>
+      </Card.Body>
+      <div className="w-100 text-center my-3">
         <Link to="/home">Cancel</Link>
       </div>
     </>
