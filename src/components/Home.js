@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 
 function Home() {
   const [error, setError] = useState('');
-  const { logout } = useAuth();
+  const { currentUser, logout } = useAuth();
   const history = useHistory();
 
 
@@ -33,6 +33,8 @@ function Home() {
         <Card.Body className="onbordtextbg1 m-3">
           <Button className="rounded-pill" onClick={handleLogout}>Log out</Button>
           <strong>Email:</strong>
+          {' '}
+          { currentUser.email }
         </Card.Body>
       </Card>
 
