@@ -54,7 +54,7 @@ function Signup() {
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center">
+      <div className="w-100 text-center mt-3">
         Already have an account?
         {' '}
         <Link to="/login">Log In</Link>
