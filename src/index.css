@@ -52,6 +52,6 @@
   opacity: 1; /* Firefox */
 }
 
-.dropdown-toggle:after {
-  display: none !important; 
+.dropdown-toggle::after {
+  display: none !important;
 }
