@@ -14,7 +14,7 @@ import UpdateProfile from './UpdateProfile';
 
 function App() {
   return (
-    <Container className="d-flex align-items-center justify-content-center mcont">
+    <Container className="d-flex align-items-center justify-content-center mcont m-0 p-0">
       <div className="w-100 scont">
         <Card className="bg1 border-0">
           <Router>

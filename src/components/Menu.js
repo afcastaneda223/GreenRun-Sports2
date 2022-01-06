@@ -21,7 +21,7 @@ function Menu() {
   }
 
   return (
-    <>
+    <div className='card_holder'>
       {error && <Alert variant="danger">{error}</Alert>}
       <Card.Body className="onbordtextbg1 m-3 d-flex justify-content-between">
         <NavItem>
@@ -56,7 +56,7 @@ function Menu() {
           </NavDropdown>
         </NavItem>
       </Card.Body>
-    </>
+    </div>
   );
 }
 

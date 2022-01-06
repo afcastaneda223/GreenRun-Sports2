@@ -32,8 +32,9 @@ const reducer = (state = initialState, action) => {
       });
     case GET_SPORTS:
       return action.payload.sports.map((key) => ({
-        id: key.idSport,
-        sport_img: key.strSportThumb,
+        index: key.idSport - 102,
+        name: key.strSport,
+        url: key.strSportThumb,
         sport_icon: key.strSportIconGreen,
         liked: false,
       }));
